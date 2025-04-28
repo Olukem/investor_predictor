@@ -45,9 +45,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ====== LOAD MODEL ======
-run_id = "7e7edbfec7c6489d9965aa803cddd396"
-model_uri = f"runs:/{run_id}/catboost_model"
-model = mlflow.sklearn.load_model(model_uri)
+#run_id = "7e7edbfec7c6489d9965aa803cddd396"
+#model_uri = f"runs:/{run_id}/catboost_model"
+model = mlflow.sklearn.load_model("saved_model")
 
 # ====== APP HEADER ======
 st.title("Long-Term Investor Prediction")
